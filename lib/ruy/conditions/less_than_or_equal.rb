@@ -20,7 +20,8 @@ module Ruy
       def ==(o)
         o.kind_of?(LessThanOrEqual) &&
           attr == o.attr &&
-          value == o.value
+          value == o.value &&
+          self.conditions == o.conditions
       end
     end
   end
